@@ -19,13 +19,13 @@ Before running this project, make sure you have the following installed:
 
 1. **Clone the repository**
 
-   git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+        git clone https://github.com/your-username/your-repo-name.git
+        cd your-repo-name
 
 2. **Install Dependencies**
 - Navigate to the root of the project and install the required dependencies:
 
-  npm install
+       npm install
 This will install:
 
 - express for server routing
@@ -43,13 +43,13 @@ This will install:
 4. **Running the Application**
 - After setting up the MongoDB connection, start the Node.js server
 
-    node app.js
+       node app.js
 - The server will run on http://localhost:3000/
 
 5. **Access the Registration Page**
 - Open your browser and go to:
 
-   http://localhost:3000/register.html
+      http://localhost:3000/register.html
 
 
 ## Project Structure
