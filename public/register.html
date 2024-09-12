@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script defer src="scripts.js"></script>
+    <style>
+ /* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+label {
+    font-weight: bold;
+    color: #333333;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.3);
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-image: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-position 0.4s ease, box-shadow 0.3s;
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+button[type="submit"]:hover {
+    background-position: right;
+    box-shadow: 0 6px 16px rgba(37, 117, 252, 0.4);
+}
+
+form p {
+    color: #666666;
+    font-size: 14px;
+    text-align: center;
+}
+
+form a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form a:hover {
+    text-decoration: underline;
+    color: #2575fc;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <form id="registerForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
